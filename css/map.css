@@ -375,7 +375,7 @@ table tbody th {padding: 0.5rem 1rem;height: 4rem;font-weight: 700;text-align: c
 }
 
 /* 유동인구 경고창 */
-.dstAlert.modalPop {position: absolute;width: 36rem;height: 24rem;left: calc(50% - 18rem);top: calc(50% - 12rem);padding: 2rem;background: none;}
+.dstAlert.modalPop {position: absolute;width: 32rem;height: 24rem;left: calc(50% - 16rem);top: calc(50% - 12rem);padding: 2rem;background: none;}
 .dstAlert.active{display: block;}
 .dstAlert.modalPop .modalHead{background: var(--color-primary);}
 .dstAlert .modalWrap{width:100%;}
