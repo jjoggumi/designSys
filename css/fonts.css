@@ -1,0 +1,33 @@
+@charset "utf-8"; 
+@font-face {
+  font-family: 'appleGothicB';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/AppleSDGothicNeo/AppleSDGothicNeoB.ttf');
+}
+@font-face {
+  font-family: 'appleGothicM';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/AppleSDGothicNeo/AppleSDGothicNeoM.ttf');
+}
+@font-face {
+  font-family: 'appleGothicSB';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/AppleSDGothicNeo/AppleSDGothicNeoSB.ttf');
+}
+@font-face {
+  font-family: 'appleGothic';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/AppleSDGothicNeo/AppleSDGothicNeoR.ttf');
+}
+@font-face {
+  font-family: 'NanumSquare';
+  font-weight: 600;
+  src: url(../fonts/NanumSquare/NanumSquareEB.eot);
+  src: url(../fonts/NanumSquare/NanumSquareEB.eot?#iefix) format('embedded-opentype'),
+       url(../fonts/NanumSquare/NanumSquareEB.woff) format('woff'),
+       url(../fonts/NanumSquare/NanumSquareEB.ttf) format('truetype');
+ }
