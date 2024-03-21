@@ -14,9 +14,9 @@
   --font-point-color: #1544DD;
 }
 
-html {font-size: 62.5%;}
+html {font-size: 62.5%;border:3px solid #c00000;}
 
-body {height: 100%;margin: 0;line-height: 1.2;font-family: var(--font-body);font-size: 1.5rem;font-weight: 400;color: var(--font-color);letter-spacing: -0.04em;}
+body {height: 100%;border:3px solid #000;margin: 0;line-height: 1.2;font-family: var(--font-body);font-size: 1.5rem;font-weight: 400;color: var(--font-color);letter-spacing: -0.04em;}
 
 @media (max-width: 576px) {
   body{overflow: hidden;}
