@@ -14,6 +14,7 @@
   --font-point-color: #1544DD;
 }
 
+/* 0322 vh단위 모바일 오류 대응(vh > dvh)  */
 html {height: 100dvh;font-size: 62.5%;}
 
 body {height: 100dvh;margin: 0;line-height: 1.2;font-family: var(--font-body);font-size: 1.5rem;font-weight: 400;color: var(--font-color);letter-spacing: -0.04em;}
@@ -304,8 +305,6 @@ table tbody th {padding: 0.5rem 1rem;height: 4rem;font-weight: 700;text-align: c
 
 .leaflet-touch .leaflet-control-zoomslider{display:none;}
 
-
-
 /* 시설물  */
 #ctr .amntCon{display:none;flex-wrap: wrap;position: absolute;right: 6rem;top:0.5rem;width: 39.6rem;background: #fff;
   border: 1px solid #ddd;border-right: 0;border-bottom: 0;border-radius: 0.5rem;overflow: hidden;box-shadow: 0 0 1.5rem rgb(0 0 0 / 25%);}
@@ -527,7 +526,6 @@ table tbody th {padding: 0.5rem 1rem;height: 4rem;font-weight: 700;text-align: c
 }
 
 
-
 /* leaflet popup custom 추가 부분*/
 .leaflet-popup-content-wrapper {
     background: none;
@@ -541,9 +539,7 @@ table tbody th {padding: 0.5rem 1rem;height: 4rem;font-weight: 700;text-align: c
     display: none;
 }
 
-
-
-
+/* 0322 leaflet popup 모바일 대응  */
 @media (max-width: 576px) {
   .mbSbaView.leaflet-map-pane{transform: none !important;z-index:410;}
   .mbSbaView .leaflet-popup-pane{transform: none !important; right: 0;bottom: 0;position: fixed;}
