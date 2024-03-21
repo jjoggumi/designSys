@@ -14,9 +14,9 @@
   --font-point-color: #1544DD;
 }
 
-html {height: 100svh;font-size: 62.5%;border:5px solid #c00000;}
+html {height: 100dvh;font-size: 62.5%;}
 
-body {height: 100svh;margin: 0;line-height: 1.2;font-family: var(--font-body);font-size: 1.5rem;font-weight: 400;color: var(--font-color);letter-spacing: -0.04em;}
+body {height: 100dvh;margin: 0;line-height: 1.2;font-family: var(--font-body);font-size: 1.5rem;font-weight: 400;color: var(--font-color);letter-spacing: -0.04em;}
 
 @media (max-width: 576px) {
   body{overflow: hidden;}
@@ -107,7 +107,7 @@ table tbody th {padding: 0.5rem 1rem;height: 4rem;font-weight: 700;text-align: c
 .modalHead .closeBtn::after,
 .modalHead .closeBtn::before{content: '';display: block;position: absolute;top: 50%;right: calc(50% - 1rem);width: 1.9rem;height: 1px;background: #fff;transform: rotate(45deg);}
 .modalHead .closeBtn::after{transform: rotate(-45deg);}
-.modalBody {max-height: calc(100vh - 8rem); overflow: auto;padding: 2rem;}
+.modalBody {max-height: calc(100dvh - 8rem); overflow: auto;padding: 2rem;}
 .modalFoot {padding: 1rem;border-top: 1px solid #eee; text-align: right;}
 
 
@@ -147,12 +147,12 @@ table tbody th {padding: 0.5rem 1rem;height: 4rem;font-weight: 700;text-align: c
 
 /* 상권분석 영역 */
 #mkaArea {width: 100%;transition: 0s;}
-#mkaArea.active{max-height:calc(100vh - 15rem);transition: 1s;}
+#mkaArea.active{max-height:calc(100dvh - 15rem);transition: 1s;}
 #mkaArea .cate{display: flex;border-bottom: 1px solid #ddd;}
 #mkaArea .cate > li{width: 100%;}
 #mkaArea .cate > li + li{border-left: 1px solid #ddd;}
 #mkaArea .cate > li p{border-bottom: 1px solid #ddd;padding: 0.8rem;margin: 0;font-family: var(--font-tit);font-size: 1.5rem;text-align: center;}
-#mkaArea .cate > li > ul{padding: 0.5rem 0;overflow-x: auto;max-height: calc(100vh - 58.5rem);}
+#mkaArea .cate > li > ul{padding: 0.5rem 0;overflow-x: auto;max-height: calc(100dvh - 58.5rem);}
 
 #mkaArea .cate > li > ul > li a{ padding: 0.3rem 1.2rem;font-size: 1.4rem;display: block;}
 #mkaArea .cate > li > ul > li a.active{background: #EBF0FF;color: var(--font-point-color);font-family: var(--font-tit);}
@@ -164,13 +164,13 @@ table tbody th {padding: 0.5rem 1rem;height: 4rem;font-weight: 700;text-align: c
 
 /* 유사건물분석 영역 */
 #sbaArea{width: 100%;transition: 0s;}
-#sbaArea.active{max-height:calc(100vh - 15rem);transition: 1s;}
+#sbaArea.active{max-height:calc(100dvh - 15rem);transition: 1s;}
 #sbaArea input{padding-right:5rem;}
 #sbaArea .searchBtn{position: absolute;right: 0;top: 0;width: 5rem;height: 100%;border: 0;  text-indent: -999999999999px;background: url(../images/icosearch.svg) no-repeat center;}
 #sbaArea .searchBtn:hover{background:#f5f5f5 url(../images/icosearch.svg) no-repeat center;}
 
 .resultWrap{max-height: 0;overflow: hidden;transition: 1s;}
-.resultWrap.active{max-height:calc(100vh - 33rem);}
+.resultWrap.active{max-height:calc(100dvh - 33rem);}
 
 .resultTit {position:relative;padding: 1.2rem 5rem 1.2rem 1.6rem;margin: 0;background: #111;color: #ccc;font-size: 1.5rem;font-family: var(--font-tit);font-weight: 400;border: 0;}
 .resultTit .count{float: right;}
@@ -187,7 +187,7 @@ table tbody th {padding: 0.5rem 1rem;height: 4rem;font-weight: 700;text-align: c
 .resultTit .count em::before,
 .resultTit .count em::after{display:none;}
 
-.resultList{max-height: calc(100vh - 45.5rem);overflow-y: auto;}
+.resultList{max-height: calc(100dvh - 45.5rem);overflow-y: auto;}
 .resultList>li {padding: 1.2rem 1.6rem;border-bottom: 0.1rem solid #ddd;}
 .resultList>li p {margin-bottom:0;}
 .resultList>li p + p {margin-top:0.8rem;}
@@ -452,14 +452,14 @@ table tbody th {padding: 0.5rem 1rem;height: 4rem;font-weight: 700;text-align: c
 #sbaInfo .sbaInfo li{position: relative;border-bottom: 1px solid #ddd;padding:0.8rem 2rem 0.6rem;text-align: right;font-family: var(--font-tit);font-size: 1.5rem;}
 #sbaInfo .sbaInfo li span.label{position: absolute;left: 2rem;font-family: var(--font-body);font-size: 1.4rem;}
 #sbaList .resultTit{padding: 1.2rem 1.6rem;}
-#sbaList .resultList{max-height: calc(100vh - 63.8rem);  overflow-y: auto;}
+#sbaList .resultList{max-height: calc(100dvh - 63.8rem);  overflow-y: auto;}
 
 @media (max-width: 576px) {
   /* .sbaView.modalPop{left: 0;top: 0;right: 0;bottom: 0;max-width: none;max-height: none;} */
-  /* .sbaView .modalWrap{width: 100%;height: 100vh;border-radius: 0;}
-  .sbaView .modalBody{max-height: calc(100vh - 5rem);}   */
-  #sbaInfo.active{max-height: calc(100vh - 11.6rem);}
-  #sbaList .resultList{max-height: calc(100vh - 21.2rem);}
+  /* .sbaView .modalWrap{width: 100%;height: 100dvh;border-radius: 0;}
+  .sbaView .modalBody{max-height: calc(100dvh - 5rem);}   */
+  #sbaInfo.active{max-height: calc(100dvh - 11.6rem);}
+  #sbaList .resultList{max-height: calc(100dvh - 21.2rem);}
 }
 
 /* 상권리포트 팝업 */
@@ -505,7 +505,7 @@ table tbody th {padding: 0.5rem 1rem;height: 4rem;font-weight: 700;text-align: c
 @media (max-width: 576px) {
   #rptArea .modalHead .tit span{display: block;position: static;}
   #rptArea .modalWrap{width: 100%;border-radius: 0;}
-  #rptArea .modalBody{max-height: calc(100vh - 5rem);}
+  #rptArea .modalBody{max-height: calc(100dvh - 5rem);}
 }
 
 /* loading bar */
