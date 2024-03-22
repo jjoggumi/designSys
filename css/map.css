@@ -161,7 +161,7 @@ table tbody th {padding: 0.5rem 1rem;height: 4rem;font-weight: 700;text-align: c
 #mkaArea .searchBtn:active{background: #111;border-color: #111;transition: all 0.3s ease;}
 
 @media (max-width: 1023px) {
-  #mkaArea .cate > li > ul { max-height: calc(100dvh - 48.5rem);}
+  #mkaArea .cate > li > ul { max-height: calc(100dvh - 48.3rem);}
 }
 
 /* 유사건물분석 영역 */
