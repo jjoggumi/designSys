@@ -552,12 +552,8 @@ table tbody th {padding: 0.5rem 1rem;height: 4rem;font-weight: 700;text-align: c
 
 @media( orientation: portrait ){
   html {
-    transform: rotate(-90deg);
-    transform-origin: top left;
     position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100dvh;
-    height: 100dvw;
+    width: 100dvw;
+    height: 100dvh;
   }
 } 
