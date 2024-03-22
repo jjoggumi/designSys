@@ -17,11 +17,7 @@
 /* 0322 vh단위 모바일 오류 대응(vh > dvh)  */
 html {font-size: 62.5%;}
 
-body {height: 100dvh;margin: 0;line-height: 1.2;font-family: var(--font-body);font-size: 1.5rem;font-weight: 400;color: var(--font-color);letter-spacing: -0.04em;}
-
-@media (max-width: 576px) {
-  body{overflow: hidden;}
-}
+body {height: 100dvh;overflow: hidden;margin: 0;line-height: 1.2;font-family: var(--font-body);font-size: 1.5rem;font-weight: 400;color: var(--font-color);letter-spacing: -0.04em;}
 
 *, *::before, *::after {box-sizing: border-box;}
 a{color: var(--font-color);}
@@ -139,7 +135,7 @@ table tbody th {padding: 0.5rem 1rem;height: 4rem;font-weight: 700;text-align: c
 .conWrap .searchBox input::placeholder {color: #b6b6b6;}
 .conWrap  h3.tit{padding: 1.2rem 1.6rem;margin: 0;background: #F6F6F6;font-size: 1.5rem;border-bottom: 1px solid #ccc;}
 
-@media (max-width: 576px) {
+@media (max-width: 1023px) {
   .conWrap{top: auto; bottom: 0;left: 0;right: 0;background: #fff;width: auto; z-index: 403;border-radius: 1rem 1rem 0 0;}
   .conWrap .logo{position: fixed;top: 1rem;left: 1rem;right: 1rem;width: auto;background: #fff;border-radius: 1rem;padding: 1.5rem;font-size: 1.9rem;}
   .conWrap .logo:before{width: 20px;height: 20px;background-size: contain;}
@@ -163,7 +159,7 @@ table tbody th {padding: 0.5rem 1rem;height: 4rem;font-weight: 700;text-align: c
 #mkaArea .searchBtn:hover,
 #mkaArea .searchBtn:active{background: #111;border-color: #111;transition: all 0.3s ease;}
 
-@media (max-width: 576px) {
+@media (max-width: 1023px) {
   #mkaArea .cate > li > ul { max-height: calc(100dvh - 48.5rem);}
 }
 
@@ -223,6 +219,10 @@ table tbody th {padding: 0.5rem 1rem;height: 4rem;font-weight: 700;text-align: c
 
 .paging a span{font-size: 1.3rem;font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;}
 
+@media (max-width: 1023px) {
+  .paging li a:focus,
+  .paging li a:hover{z-index:2;background-color:#fff;}
+}
 
 /* Controller Area */
 #ctr{position: absolute;right: 1rem;top: calc(50% - 23rem);z-index: 402;}
@@ -420,7 +420,7 @@ table tbody th {padding: 0.5rem 1rem;height: 4rem;font-weight: 700;text-align: c
 .rptSmr .state li:nth-child(3) p span.ico{background-image: url(../images/reportIco03.svg) }
 .rptSmr .state li p span.label{display: block;padding: 0.3rem 1rem 0.1rem;margin:0.5rem 0 1rem;border-radius: 1rem;background: var(--color-primary);color: #fff;font-size: 1.3rem;}
 .rptSmr .state li p span.label br{display:none;}
-.rptSmr .state li p span.value{font-size: 2.5rem;font-family: var(--font-tit);}
+.rptSmr .state li p span.value{font-size: 2.3rem;font-family: var(--font-tit);}
 .rptSmr .state li p span.value small{font-size: 1.3rem;}
 
 @media (max-width: 600px) {
@@ -435,7 +435,6 @@ table tbody th {padding: 0.5rem 1rem;height: 4rem;font-weight: 700;text-align: c
 }
 @media (max-width: 450px) {
   .rptSmr .state li{padding: 1rem 0.5rem;}
-  /* .rptSmr .state li p span.value{font-size: 2rem;} */
   .rptSmr .state li p span.value{font-size: 1.4rem;}
   .rptSmr .state li p span.label{padding: 0.7rem 0.7rem 0.5rem;margin: 0rem 0 0.5rem;}
   .rptSmr .state li p span.label br{display:block;}
@@ -449,8 +448,7 @@ table tbody th {padding: 0.5rem 1rem;height: 4rem;font-weight: 700;text-align: c
 .sbaView .tab button{margin: 0.5rem;border-radius: 0.5rem;}
 .sbaView .tab button:not(.active){background: #fff;border: 1px solid var(--color-primary);color: var(--font-point-color);}
 .sbaView .tabcontent{ border-top: 1px solid #ddd;}
-#sbaInfo{overflow-y: auto;}
-#sbaInfo.active{max-height: 49rem;}
+#sbaInfo, #sbaList{overflow-y: auto;height: 49rem;}
 #sbaInfo h4.tit{margin: 1.2rem;}
 #sbaInfo .sbaInfo{border-top: 1px solid #ddd;}
 #sbaInfo .sbaInfo li{position: relative;border-bottom: 1px solid #ddd;padding:0.8rem 2rem 0.6rem;text-align: right;font-family: var(--font-tit);font-size: 1.5rem;}
@@ -458,12 +456,19 @@ table tbody th {padding: 0.5rem 1rem;height: 4rem;font-weight: 700;text-align: c
 #sbaList .resultTit{padding: 1.2rem 1.6rem;}
 #sbaList .resultList{max-height: calc(100dvh - 63.8rem);  overflow-y: auto;}
 
-@media (max-width: 576px) {
-  /* .sbaView.modalPop{left: 0;top: 0;right: 0;bottom: 0;max-width: none;max-height: none;} */
-  /* .sbaView .modalWrap{width: 100%;height: 100dvh;border-radius: 0;}
-  .sbaView .modalBody{max-height: calc(100dvh - 5rem);}   */
-  #sbaInfo.active{max-height: calc(100dvh - 11.6rem);}
-  #sbaList .resultList{max-height: calc(100dvh - 21.2rem);}
+@media (max-width: 567px) {  
+  /* 0322 leaflet popup 모바일 대응  */
+  .mbSbaView.leaflet-map-pane{transform: none !important;z-index:410;}
+  .mbSbaView .leaflet-popup-pane{transform: none !important; right: 0;bottom: 0;position: fixed;}
+  .mbSbaView .leaflet-popup-pane .leaflet-popup{transform: none !important;position: absolute !important;left: 0 !important;right: 0 !important;bottom: 0 !important;top: 0 !important;margin: 0;  }
+  .mbSbaView .leaflet-popup-content{width: auto !important;margin: 0;} 
+
+  .sbaView.modalPop{max-width: 100%;left: 0;right: 0;top: 0;bottom: 0;max-height: 100%;}
+  .sbaView .modalWrap{border-radius: 0;height: 100%;}
+  .sbaView .modalBody{height: calc(100% - 50px);max-height: none;} 
+  #sbaInfo{overflow-y: auto;height: calc(100dvh - 11.6rem);}
+  #sbaList{overflow-y: auto;height: calc(100dvh - 11.6rem);}
+  #sbaList .resultList{max-height: calc(100dvh - 21.5rem);}
 }
 
 /* 상권리포트 팝업 */
@@ -542,15 +547,4 @@ table tbody th {padding: 0.5rem 1rem;height: 4rem;font-weight: 700;text-align: c
 }
 .leaflet-popup-close-button {
     display: none;
-}
-
-/* 0322 leaflet popup 모바일 대응  */
-@media (max-width: 576px) {
-  .mbSbaView.leaflet-map-pane{transform: none !important;z-index:410;}
-  .mbSbaView .leaflet-popup-pane{transform: none !important; right: 0;bottom: 0;position: fixed;}
-  .mbSbaView .leaflet-popup-pane .leaflet-popup{transform: none !important;position: absolute !important;left: 0 !important;right: 0 !important;bottom: 0 !important;top: 0 !important;margin: 0;  }
-  .mbSbaView .leaflet-popup-content{width: auto !important;margin: 0;}
-  .sbaView.modalPop{max-width: 100%;left: 0;right: 0;top: 0;bottom: 0;max-height: 100%;}
-  .sbaView .modalWrap{border-radius: 0;height: 100%;}
-  .sbaView .modalBody{height: calc(100% - 50px);max-height: none;}  
 }
