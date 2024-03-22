@@ -153,7 +153,7 @@ table tbody th {padding: 0.5rem 1rem;height: 4rem;font-weight: 700;text-align: c
 #mkaArea .cate > li{width: 100%;}
 #mkaArea .cate > li + li{border-left: 1px solid #ddd;}
 #mkaArea .cate > li p{border-bottom: 1px solid #ddd;padding: 0.8rem;margin: 0;font-family: var(--font-tit);font-size: 1.5rem;text-align: center;}
-#mkaArea .cate > li > ul{padding: 0.5rem 0;overflow-x: auto;max-height: calc(100dvh - 56.5rem);min-height: 10rem;}
+#mkaArea .cate > li > ul{padding: 0.5rem 0;overflow-x: auto;max-height: calc(100dvh - 56.5rem);}
 
 #mkaArea .cate > li > ul > li a{ padding: 0.3rem 1.2rem;font-size: 1.4rem;display: block;}
 #mkaArea .cate > li > ul > li a.active{background: #EBF0FF;color: var(--font-point-color);font-family: var(--font-tit);}
@@ -162,6 +162,10 @@ table tbody th {padding: 0.5rem 1rem;height: 4rem;font-weight: 700;text-align: c
 #mkaArea .searchBtn{width: 100%;border-radius: 0 0 0.5rem 0.5rem;padding: 1.2rem 1rem 1rem 1rem;color: #fff;background: #0B1D59;border-color: #0B1D59;}
 #mkaArea .searchBtn:hover,
 #mkaArea .searchBtn:active{background: #111;border-color: #111;transition: all 0.3s ease;}
+
+@media (max-width: 576px) {
+  #mkaArea .cate > li > ul { max-height: calc(100dvh - 48.5rem);}
+}
 
 /* 유사건물분석 영역 */
 #sbaArea{width: 100%;transition: 0s;}
