@@ -17,7 +17,7 @@
 /* 0322 vh단위 모바일 오류 대응(vh > dvh)  */
 html {font-size: 62.5%;}
 
-body {position: relative;height: 100dvh;margin: 0;line-height: 1.2;font-family: var(--font-body);font-size: 1.5rem;font-weight: 400;color: var(--font-color);letter-spacing: -0.04em;}
+body {background:#c00000;border:5px solid #c00000;position: relative;height: 100dvh;margin: 0;line-height: 1.2;font-family: var(--font-body);font-size: 1.5rem;font-weight: 400;color: var(--font-color);letter-spacing: -0.04em;}
 
 @media (max-width: 576px) {
   body{overflow: hidden;}
