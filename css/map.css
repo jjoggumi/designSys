@@ -553,3 +553,20 @@ table tbody th {padding: 0.5rem 1rem;height: 4rem;font-weight: 700;text-align: c
   .sbaView .modalWrap{border-radius: 0;height: 100%;}
   .sbaView .modalBody{height: calc(100% - 50px);max-height: none;}  
 }
+
+
+ 
+@media( orientation: portrait ){
+} 
+
+@media screen and (orientation: landscape) {  
+  html {
+    transform: rotate(-90deg);
+    transform-origin: top left;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100vh;
+    height: 100vw;
+  }
+}
