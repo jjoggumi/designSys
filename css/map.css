@@ -140,7 +140,7 @@ table tbody th {padding: 0.5rem 1rem;height: 4rem;font-weight: 700;text-align: c
 .conWrap  h3.tit{padding: 1.2rem 1.6rem;margin: 0;background: #F6F6F6;font-size: 1.5rem;border-bottom: 1px solid #ccc;}
 
 @media (max-width: 576px) {
-  .conWrap{top: auto; bottom: 0;left: 0;right: 0;background: #fff;width: auto; z-index: 403;border-radius: 1rem 1rem 0 0;}
+  .conWrap{top: auto; bottom: 0;left: 0;right: 0;background: #fff;width: auto; z-index: 403;border-radius: 1rem 1rem 0 0;border: 5px solid #c00000;}
   .conWrap .logo{position: fixed;top: 1rem;left: 1rem;right: 1rem;width: auto;background: #fff;border-radius: 1rem;padding: 1.5rem;font-size: 1.9rem;}
   .conWrap .logo:before{width: 20px;height: 20px;background-size: contain;}
   .conWrap .navCtrW{display: block;}
