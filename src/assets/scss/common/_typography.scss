@@ -1,0 +1,30 @@
+/* Typography */
+
+
+ /* 괄호  */
+.bracket {position: relative;}
+.bracket::before, .bracket::after{position:absolute;border:1px solid #000;width:5rem;height:5rem;display:block;content:'';}
+.bracket::before{top:-1px;left:-1px;border-right:0;border-bottom:0;}
+.bracket::after{bottom:-1px;right:-1px;border:1px solid #000;border-left:0;border-top:0;}
+
+:where(ul, ol)[class *= 'list-']{
+	margin-bottom: 1.5rem;
+	> li{position: relative;padding: .2rem .3rem .2rem 1.5rem;}
+} 
+
+/* List-Dotted */
+.list-dot li:before {content: '';position: absolute;top: 12px;left: 0px;width: 4px;height: 4px;background: #6a6b6d}
+
+/* List-Hyphen */
+.list-hyphen li:before {content: '-';position: absolute;top: 3px;left: 0px;width: auto;height: auto;background: none;}
+
+/* List-num */
+.list-num li:before {content: '-';position: absolute;top: 3px;left: 0px;width: auto;height: auto;background: none;}
+
+/* List-no */
+.list-num2 li {padding: .2rem .3rem .2rem 2.5rem;}
+.list-num2 li > span{ position:absolute; top:.3rem; left:0; color: #c9c9c9; font-size: 1.6rem; padding: 0; }
+
+/* List-box */
+.list-box > li {padding:.2rem;}
+.list-box > li > span{ color: #fff; background: var(--third);; font-size: 1.3rem; padding: 0.4rem 0.7rem; margin-right: 1rem; }

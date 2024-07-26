@@ -1,0 +1,6 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g class="icoMapMyLocation">
+<path d="M19.2727 12C19.2727 16.0166 16.0166 19.2727 12 19.2727M19.2727 12C19.2727 7.98338 16.0166 4.72727 12 4.72727M19.2727 12L22 12M12 19.2727C7.98338 19.2727 4.72727 16.0166 4.72727 12M12 19.2727V22M4.72727 12C4.72727 7.98338 7.98338 4.72727 12 4.72727M4.72727 12H2M12 4.72727V2" stroke="black" stroke-width="2" stroke-linecap="round" class="strokeBasic"></path>
+<circle cx="12" cy="12" r="4" fill="black" class="fillPoint"></circle>
+</g>
+</svg>

@@ -1,0 +1,173 @@
+/* Button Style */
+@mixin btnStyle($bg, $font:$color-white, $border:$bg, $focus) {
+	color:$font;
+	background: $bg;
+	border-color:$border;	
+	&:hover:not(.disabled,:disabled),
+	&:active:not(.disabled,:disabled) {
+	  background:darken($bg,10%);
+		border-color: darken($border,10%);
+		transition: all 0.3s ease;
+	  } 
+	&:focus:not(.disabled,:disabled) {
+		box-shadow:0 0 0 3px lighten($border,$focus);
+	}
+	> .ico{background-color:$font;}
+}
+
+button {
+	cursor: pointer; 
+	font-weight: var(--font-bold); 
+	&:focus {outline: 0;}	
+	span {pointer-events: none;}  
+}
+
+.btn {
+	display: inline-block;
+	padding: 0.5rem 1.2rem;
+	border-radius: .3rem;
+	border:1px solid #ccc;
+	background-color: transparent;
+	text-align: center;
+	vertical-align: middle;
+	font-family: var(--font-body);
+	font-weight: var(--font-bold); 
+	font-size: 1.5rem;
+	line-height: 1.5;
+	text-decoration: none;
+	cursor: pointer;
+	transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	word-break: keep-all;
+	
+	@include btnStyle(transparent, $font:#212529, $border:transparent, $focus:0);
+	
+	&.disabled, 
+	&:disabled,
+	&[aria-disabled="true"]{
+		color: darken($color-disabled,15%);
+		pointer-events: none;
+		background-color:$color-disabled;
+		border-color:$color-disabled;
+	}		
+	
+	/* 버튼 사이즈 */
+	&-xs { padding: 0.2rem 0.4rem; font-size: 1.2rem; }
+	&-sm { padding: 0.2rem 0.7rem; font-size: 1.4rem; }
+	&-lg { padding: 0.8rem 1.6rem; font-size: 1.8rem; }
+	&-block{width:100%;}
+
+	/* 버튼 스타일 */
+	&-default   { @include btnStyle($color-disabled,  $font:#212529, $border:$color-disabled, $focus:10)}
+	&-primary   { @include btnStyle($color-primary,   $focus:35);}
+	&-secondary { @include btnStyle($color-secondary, $focus:40);}
+	&-success   { @include btnStyle($color-success,   $focus:50);}
+	&-special   { @include btnStyle($color-specail,   $focus:35);}
+	&-info      { @include btnStyle($color-info,      $focus:35);}
+	&-danger    { @include btnStyle($color-danger,    $focus:45);}
+	&-warning   { @include btnStyle($color-warning,   $focus:35);}
+	&-gray      { @include btnStyle($color-gray,      $focus:35);}
+	&-dark      { @include btnStyle($color-dark,      $focus:60);}
+	
+	&-outline-default   { @include btnStyle($color-white, $font:$color-gray,      $border:$color-disabled,  $focus:10)}
+	&-outline-primary   { @include btnStyle($color-white, $font:$color-primary,   $border:$color-primary,   $focus:35);}
+	&-outline-secondary { @include btnStyle($color-white, $font:$color-secondary, $border:$color-secondary, $focus:40);}
+	&-outline-success   { @include btnStyle($color-white, $font:$color-success,   $border:$color-success,   $focus:50);}
+	&-outline-special   { @include btnStyle($color-white, $font:$color-specail,   $border:$color-specail,   $focus:35);}
+	&-outline-info      { @include btnStyle($color-white, $font:$color-info,      $border:$color-info,      $focus:35);}
+	&-outline-danger    { @include btnStyle($color-white, $font:$color-danger,    $border:$color-danger,    $focus:45);}
+	&-outline-warning   { @include btnStyle($color-white, $font:$color-warning,   $border:$color-warning,   $focus:35);}
+	&-outline-gray      { @include btnStyle($color-white, $font:$color-gray,      $border:$color-gray,      $focus:35);}
+	&-outline-dark      { @include btnStyle($color-white, $font:$color-dark,      $border:$color-dark,      $focus:60);}
+	
+	
+	/* 아이콘 버튼 */		
+	&[class *= 'ico'] {	display: inline-flex; align-items: center; position: relative;
+		> .ico{
+			display: inline-block;
+			width: 1.8rem;
+			height: 1.8rem;
+			text-indent: -999999999px;
+			-webkit-mask-repeat: repeat;mask-repeat: no-repeat;-webkit-mask-position: left center;mask-position: left center;-webkit-mask-size: contain;mask-size: contain;		
+		}
+	}
+
+	&.icoLeft {
+		> .ico{margin-right: 0.5rem;}
+	}	
+	&.icoRight { 
+		flex-flow: row-reverse; 
+		> .ico{margin-left: 0.5rem;}
+	}
+	&.icoTop {
+		flex-flow: column;
+		> .ico{margin-top: 0.5rem;}
+	}
+	&.icoBottom {
+		flex-flow: column-reverse;
+		> .ico{margin-top:0.2rem;margin-bottom: 0.3rem;}
+	}	
+
+	/* 버튼 그룹 */
+	&-group {
+		position: relative; display: inline-flex; vertical-align: middle;
+	  
+		> &:not(:first-child), 
+		> .btn:not(:first-child) { margin-left: -1px; }
+		
+		> &:not(:last-child) > .btn, 
+		> .btn:not(:last-child):not(.dropdown-toggle) { border-top-right-radius: 0; border-bottom-right-radius: 0; }
+		
+		> &:not(:first-child) > .btn,
+		> .btn:nth-child(n+3),
+		> :not(.btn-check) + .btn { border-top-left-radius: 0; border-bottom-left-radius: 0; }
+	}
+
+	
+}
+
+
+/* 흰색 버튼 */
+.btn-bg-w {border-color: rgba(0, 0, 0, 0.2);background:#fff;
+
+	
+}
+.btn-bg-w:hover {background:#ebeef4;}
+.btn-bg-w.dis {background:#fff;cursor:default;opacity:0.5;}
+
+/* 흰색 버튼2 파랑보더 */
+.btn-bg-w2 {border:1px solid rgba(66, 103, 178, 0.4);background:#fff;color:#3867c6;}
+.btn-bg-w2:hover {background:#ebeef4;}
+.btn-bg-w2.dis {background:#fff;cursor:default;opacity:0.5;}
+
+.btn-bg-w3 {border:1px solid #4778DE;background:#fff;color:#4778DE;}
+.btn-bg-w3:hover {background:#ebeef4;}
+.btn-bg-w3.dis {background:#fff;cursor:default;opacity:0.5;}
+
+.btn-bg-w4 {border: 1px solid #4267B266;background:#fff;color:#4778DE;}
+.btn-bg-w4:hover {background:#ebeef4;}
+.btn-bg-w4.dis {background:#fff;cursor:default;opacity:0.5;}
+
+/* 코랄 버튼 border */
+.btn-bg-cb {border:1px solid #ff6a6a;background:#fff;color:#ff6a6a;}
+.btn-bg-cb:hover {opacity:0.8;}
+.btn-bg-cb.dis {background:#dadde2;cursor:default;color:#fff;opacity:1 !important;border:0;}
+
+/* 흰색 버튼-none border */
+.btn-bg-w-nb {background:#fff;}
+.btn-bg-w-nb:hover {opacity:0.8;}
+.btn-bg-w-nb.dis {background:#fff;color:#000;cursor:default;opacity:0.2;}
+
+/* 코발트 버튼 */
+.btn-bg-c {background: #4778de;color:#fff;text-align:center;}
+.btn-bg-c:hover {background:#3867c6;}
+.btn-bg-c.dis {background:#dadde2;cursor:default;color:#fff;}
+
+/* 오렌지 버튼 */
+.btn-bg-y {background:#ffc56a;}
+.btn-bg-y:hover {opacity:0.8;}
+.btn-bg-y.dis {background:#ffc56a;}
+

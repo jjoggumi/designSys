@@ -1,0 +1,183 @@
+@charset "UTF-8";
+@import url('https://download.hiclass.net/static/assets/css/nanumsquare.css');
+@import url('https://download.hiclass.net/static/assets/css/SpoqaHanSansNeo.css');
+@import url("https://fonts.googleapis.com/css?family=Noto+Color+Emoji"); /* Emoji */
+@import url('https://download.hiclass.net/static/assets/css/nanumsquareround.css');
+
+* {
+    font-family: "Spoqa Han Sans Neo", -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", "NanumSquareRound", "Noto Color Emoji", sans-serif;
+    color: #000;
+    font-size: 14px;
+    line-height: 100%;
+    padding: 0;
+    margin: 0;
+    word-break: keep-all;
+    box-sizing: border-box;
+    -webkit-text-size-adjust: none;
+    letter-spacing: -.2px;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    user-select: none;
+}
+body {overflow-y:scroll;}
+div, span, strong, em, p, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td, td, abbr, acronym, address, big, cite, code, ins, small, sub, sup {padding:0; margin:0;font-size:inherit;color:inherit;}
+div img, dl img, dt img, dd img, ul img, ol img, li img, h1 img, h2 img, h3 img, h4 img, h5 img, h6 img, pre img, form img, fieldset img, input img, textarea img, p img, blockquote img, th img, td img{font-size:0; line-height:0;}
+table {border-collapse:collapse; border-spacing:0;}
+ol, ul, li {margin:0;padding:0;list-style:none;}
+ul, menu, dir {-webkit-margin-before:0 !important;-webkit-margin-after:0 !important;-webkit-margin-start:0 !important;-webkit-margin-end:0 !important;}
+h1, h2, h3, h4, h5, h6, th, td {font-weight:normal; font-size:100%;}
+form, fieldset, a img {border:0;}
+q:before,q:after {content:'';}
+abbr,acronym {border:0;}
+address, abbr, address, big, cite, code, ins, small, sub, sup, em{font-weight:normal; font-style:normal;}
+sup, sub {color:inherit;}
+blockquote, q {quotes:none;}
+caption {display:none;}
+input, textarea, select {background:#fff;}
+input, textarea, select, img {vertical-align:middle;}
+img {background:none;image-rendering:-webkit-optimize-contrast;}
+a img, img {vertical-align:middle;}
+time, progress, mark, output {display:inline;}
+a {text-decoration:none;cursor:pointer;}
+a img {border:0;}
+img, input, select {vertical-align:middle;outline:none;}
+input {color:#000; vertical-align:middle;outline:none;}
+select {font-size:13px; border:0; ;}
+button, textarea {outline:none;}
+button {padding:0;border:0;background:none;cursor:pointer;}
+select {-webkit-border-radius:0;-webkit-appearance:none;appearance:none;}
+select::-ms-expand {display:none;}
+textarea {resize:none;}
+input {border-radius: 0;-webkit-border-radius: 0;-webkit-appearance: none;}
+pre {
+    white-space: pre-wrap;       /* Since CSS 2.1 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;
+    width: 100%;
+    height: 100%;
+}
+
+/* placeholder */
+textarea::placeholder {color: #bdbdbd;}
+textarea:-ms-input-placeholder {color: #bdbdbd;}
+textarea::-ms-input-placeholder {color: #bdbdbd;}
+input[type=text]::placeholder {color: #bdbdbd;}
+input[type=text]:-ms-input-placeholder {color: #bdbdbd;}
+input[type=password]::placeholder {color: #bdbdbd;}
+input[type=password]:-ms-input-placeholder {color: #bdbdbd;}
+input[type=tel]::placeholder {color: #bdbdbd;}
+input[type=tel]:-ms-input-placeholder {color: #bdbdbd;}
+input[type=text]::-ms-clear {display: none;}
+input[type=text]::-ms-reveal {display: none;}
+
+:root {text-underline-position: under;}
+
+.white-space{white-space: pre-line;}
+.clfix {*zoom:1;}
+.clfix:after {content:'';display:block;clear:both;}
+
+.tit-btn{
+    font-size: 18px!important;
+    letter-spacing: -1px;
+    color:#3867c6;
+    text-decoration: underline;
+}
+.dp-non{display: none;}
+.dp-block{display: block;}
+.dp-inline{display: inline-block;}
+.tit-link{
+    font-size: 20px;
+    font-weight: bold;
+    display: inline-block;
+    color: #2e2e2e;
+}
+.popup-tit{ border-bottom:1px solid #e0e0e0; }
+.tit-link:hover{
+    color:#000;
+}
+.tit-link:after {content:'';display:inline-block;vertical-align:middle;width:24px;height:24px;margin:-4px 0 0 0;background:url('../img/icon_calendar_next_arr_24.png') no-repeat;}
+
+.txt-etc{ font-size:13px;}
+.txt-unline{text-decoration: underline;}
+.ft-blod{font-weight: 800!important;}
+.ft-28{font-size: 28px!important;}
+.ft-24{font-size: 24px!important;}
+.ft-20{font-size: 20px!important;}
+.ft-18{font-size: 18px!important;}
+.ft-14{font-size: 14px!important;}
+.ft-orange {color:#fe5151!important;}
+.ft-orange {color:#fe5151!important;}
+.ft-blue {color:#4777de!important;}
+.ft-red {color: #f9534b!important;}
+.ft-gray{color:#888!important;}
+.ft-darkgray{color:#666!important;}
+.ft-basic{color:#333!important;}
+.ft-caution{font-size: 28px!important; color:#333!important; font-weight: 800!important;}
+
+/* ui */
+div .tc{text-align: center!important;}
+div .tl{text-align: left!important;}
+div .tr{text-align: right!important;}
+
+.mt-00{margin-top:0!important;}
+.mt-10{margin-top:10px!important;}
+.mt-12{margin-top:12px!important;}
+.mt-15{margin-top:15px!important;}
+.mt-20{margin-top:20px!important;}
+.mt-30{margin-top:30px!important;}
+
+.mb-00{margin-bottom:0!important;}
+.mb-10{margin-bottom:10px!important;}
+.mb-12{margin-bottom:12px!important;}
+.mb-20{margin-bottom:20px!important;}
+.mb-30{margin-bottom:30px!important;}
+
+.ml-10{margin-left:10px!important;}
+.ml-20{margin-left:20px!important;}
+.ml-24{margin-left:24px!important;}
+.ml-30{margin-left:30px!important;}
+.ml-40{margin-left:40px!important;}
+
+.mr-00{margin-right:0!important;}
+.mr-10{margin-right:10px!important;}
+.mr-20{margin-right:20px!important;}
+.mr-30{margin-right:30px!important;}
+.mr-40{margin-right:40px!important;}
+
+.pt-00{padding-top:0!important;}
+.pt-10{padding-top:10px!important;}
+.pt-12{padding-top:12px!important;}
+.pt-20{padding-top:20px!important;}
+.pt-30{padding-top:30px!important;}
+
+.w100 {width: 100% !important;}
+
+/* v-autolinker css */
+.autolinker {
+    color: #3867C6;
+    font-weight: 600;
+    display: inline-block;
+    word-break: break-all;
+    white-space: pre-wrap;
+}
+
+.attendancelinker {
+    color: #00f;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px; /* 150% */
+    letter-spacing: -0.2px;
+    text-decoration: underline;
+    display: inline-block;
+    word-break: break-all;
+    white-space: pre-wrap;
+}
+
+/* editor */
+figure a img {
+    width: 100%;
+}

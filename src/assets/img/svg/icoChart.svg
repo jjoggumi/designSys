@@ -1,0 +1,6 @@
+<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g class="icoChart">
+<path d="M2.5 2H15.5C15.7727 2 16 2.22728 16 2.5V15.5C16 15.7727 15.7727 16 15.5 16H2.5C2.22728 16 2 15.7727 2 15.5V2.5C2 2.22728 2.22728 2 2.5 2Z" stroke="black" stroke-width="2" class="strokeBasic"></path>
+<path d="M6 8V13M9 6V13M12 10V13" stroke="black" stroke-width="2" stroke-linecap="round" class="strokePoint"></path>
+</g>
+</svg>

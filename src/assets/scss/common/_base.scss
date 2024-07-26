@@ -1,0 +1,280 @@
+/* Base */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+	
+html{
+	font-size: 54.6875%;	
+	
+	@media (min-width: 576px) {
+		font-size: 58.5937%;
+	}	
+	@media (min-width: 992px) {
+		font-size: 62.5%;
+	}		
+}
+	
+body{
+	font-family: $font-body;
+	font-size: 1.6rem;
+	font-weight: var(--font-normal);
+	line-height: 1.4;
+	color:var(--font-color);
+	height: 100vh;		
+}	
+  
+a {
+  color: #005fc5;
+}
+
+ul{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.sr-only {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  border: 0;
+}
+
+h3, .h3 {
+  font-size: 1.8rem;
+  font-family: var(--font-title);
+  margin: 2.8rem 0 .8rem 0;
+  font-weight: var(--font-normal);
+}
+
+h3.fst, .h3.fst {
+  margin: 0 0 .8rem;
+}
+
+h3::before, .h3::before {
+  content: "";
+  display: inline-block;
+  background: url(/images/common/icons.png)-31px -109PX;
+  width: 2rem;
+  height: 2rem;
+  vertical-align: middle;
+  margin: 0 .4rem;
+}
+
+/* width */
+.fullW {
+  width: 100%;
+}
+
+.w100 {
+  width: 10rem;
+}
+
+.w150 {
+  width: 15rem;
+}
+
+.w200 {
+  width: 20rem;
+}
+
+.w250 {
+  width: 25rem;
+}
+
+.w300 {
+  width: 30rem;
+}
+
+.w400 {
+  width: 40rem;
+}
+
+.w500 {
+  width: 50rem;
+}
+  
+  
+  
+/* bg color */
+.bg-primary {
+  background: var(--primary);
+  color: #fff;
+}
+
+.bg-secondary {
+  background: var(--secondary);
+  color: #fff;
+}
+
+.bg-success {
+  background: var(--success);
+  color: #fff;
+}
+
+.bg-info {
+  background: var(--info);
+  color: #fff;
+}
+
+.bg-default {
+  background: var(--default);
+  color: #111;
+}
+
+.bg-danger {
+  background: var(--danger);
+  color: #fff;
+}
+
+.bg-white {
+  color: #fff;
+}
+
+.bg-black {
+  color: #000;
+}
+
+.bg-gray {
+  background: #EEEEEE;
+  color: #006ACC;
+}
+
+.bg-sky {
+  background: #C1E1FF;
+  color: #006ACC;
+}
+
+/* txt color */
+.txt-primary {
+  color: var(--primary);
+}
+
+.txt-secondary {
+  color: var(--secondary);
+}
+
+.txt-success {
+  color: var(--success);
+}
+
+.txt-info {
+  color: var(--info);
+}
+
+.txt-default {
+  color: var(--default);
+}
+
+.txt-danger {
+  color: var(--danger);
+}
+
+.txt-white {
+  color: #fff;
+}
+
+.txt-black {
+  color: #000;
+}
+  
+  
+/* txt align */
+.txt-center {
+  text-align: center !important;
+}
+
+.txt-left {
+  text-align: left !important;
+}
+
+.txt-right {
+  text-align: right !important;
+}
+
+.float-center {
+  float: center !important;
+}
+
+.float-left {
+  float: left !important;
+}
+
+.float-right {
+  float: right !important;
+}
+
+.j-center {
+  justify-content: center !important;
+}
+
+.j-left {
+  justify-content: start !important;
+}
+
+.a-start {
+  align-items: start !important;
+}
+
+.a-middle {
+  align-items: center !important;
+}
+
+.a-bottom {
+  align-items: end !important;
+}
+
+@mixin spaceMq($cate, $size:''){
+	$attr : '';
+	@if $cate == m {
+		$attr : 'margin';
+	}@else if $cate == p {
+		$attr : 'padding';
+	}
+	
+	@for $i from 0 to 6{	
+		$space:'';
+		@if $i == 3 {		
+		 	$space : 1rem ;	
+		}@else if $i == 4 {
+		 	$space : 1.5rem ;	
+		}@else if $i == 5 {
+		 	$space : 3rem ;	
+		}@else{	
+		 	$space : $i * 0.25rem ;	
+		}	 	
+		.#{$cate}#{$size}-#{$i} {#{$attr}: calc($space) !important;}
+		.#{$cate}t#{$size}-#{$i} {#{$attr}-top: calc($space) !important }
+		.#{$cate}r#{$size}-#{$i} {#{$attr}-right: calc($space) !important; }
+		.#{$cate}b#{$size}-#{$i} {#{$attr}-bottom: calc($space) !important; }
+		.#{$cate}l#{$size}-#{$i} {#{$attr}-left: calc($space) !important; }
+	}
+}
+ 
+/* margin & padding respon */
+@include spaceMq(m);
+@include spaceMq(p);
+
+@media (min-width: 576px) {
+	@include spaceMq(m,-sm);
+	@include spaceMq(p,-sm);
+}
+@media (min-width: 768px) {
+	@include spaceMq(m,-md);
+	@include spaceMq(p,-md);
+}
+@media (min-width: 992px) {
+    @include spaceMq(m,-lg);
+	@include spaceMq(p,-lg);
+}
+@media (min-width: 1200px) {
+	@include spaceMq(m,-xl);
+	@include spaceMq(p,-xl);
+}  
+  

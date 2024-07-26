@@ -1,0 +1,79 @@
+/* dropdown */
+.dropdown {
+	position: relative;
+	display: inline-block;
+  
+	> .caption {    
+		position: relative;
+    width: 100%;
+    padding-right: 4rem;
+    text-align: left;
+    cursor: pointer;
+    border: 1px solid #999;
+    border-radius: 0.5rem;
+    height: 3.5rem;
+		
+		&::after {
+			content: "";
+			display: block;
+			position: absolute;
+			width: .8rem;
+			height:.8rem;
+			border-right: 2px solid #333;
+			border-bottom: 2px solid #333;
+			right: 15px;
+			top: calc(50% - .6rem);
+			transform: rotate(45deg);
+			transition: .5s;
+		}
+	}
+	
+	> .content {
+		position: absolute;
+    background-color: #fff;
+    width: 100%;
+    border-radius: 0.4rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.15);
+    top: 4rem;
+    overflow: hidden;
+		z-index: 1;
+
+	   ul{
+			padding:0.5rem;
+
+			> li{
+				padding:0.3rem 0.5rem;  cursor: pointer;
+			}
+			> .item {
+				padding: 1.2rem 2.4rem;
+				cursor: pointer;
+				width: 100%;
+				display: inline-block;
+				font-size: 1.5rem;
+				
+				+ .item {
+					border-top: 1px solid #eee;
+				}
+				
+				&.selected {
+					font-weight: var(--font-bold);
+				}
+				&:hover {
+					color: #fff;
+				}
+			}
+		}
+	}	
+	
+	&.open{
+		> .caption::after {
+		  transform: rotate(225deg);
+		  top: calc(50% - 2px);
+		}
+		> .list {
+		  display: block;
+		}
+	}
+
+	&.block{width:100%;}
+}

@@ -1,0 +1,9 @@
+/* sweet alert */
+.swal2-custom-class.swal2-popup {padding: 50px 0 40px;border-radius: 20px;}
+.swal2-custom-class.swal2-html-container {color: #2e2e2e;font-size: 17px;font-weight: 600;line-height: 1.4;}
+.swal2-custom-class.swal2-actions {margin: 28px auto 0;}
+.swal2-custom-class.swal2-styled.swal2-confirm {width: 180px;height: 36px;border-radius: 18px;font-size: 14px;font-weight: 600;background-color: #4275df;transform: skew(.2deg);}
+.swal2-custom-class.swal2-styled.swal2-cancel {width: 180px;height: 36px;border-radius: 18px;font-size: 14px;font-weight: 600;background-color: #fff;color: #3867c6;transform: skew(.2deg);border: 1px solid rgba(66, 103, 178, 0.4);}
+.swal2-custom-class.swal2-styled.swal2-deny {width: 180px;height: 36px;border-radius: 18px;font-size: 14px;font-weight: 600;background-color: #fff;color: #3867c6;transform: skew(.2deg);border: 1px solid rgba(66, 103, 178, 0.4);}
+
+#swal2-content.swal2-html-container {font-size: 17px;}

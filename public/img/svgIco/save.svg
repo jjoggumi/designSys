@@ -1,0 +1,12 @@
+<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g class="icoSave">
+<circle cx="9" cy="10" r="1.5" stroke="black" stroke-width="3" class="fillPoint"></circle>
+<g class="fillPoint">
+<mask id="path-2-inside-1_1108_2048" fill="white">
+<path d="M4 3H10V4C10 4.55228 9.55228 5 9 5H5C4.44772 5 4 4.55228 4 4V3Z"></path>
+</mask>
+<path d="M4 3V1H2V3H4ZM10 3H12V1H10V3ZM4 5H10V1H4V5ZM8 3V4H12V3H8ZM9 3H5V7H9V3ZM6 4V3H2V4H6ZM5 3C5.55228 3 6 3.44772 6 4H2C2 5.65685 3.34315 7 5 7V3ZM8 4C8 3.44772 8.44772 3 9 3V7C10.6569 7 12 5.65685 12 4H8Z" fill="black" mask="url(#path-2-inside-1_1108_2048)"></path>
+</g>
+<path d="M3 2H12L16 6V15C16 15.5523 15.5523 16 15 16H3C2.44772 16 2 15.5523 2 15V3C2 2.44772 2.44772 2 3 2Z" stroke="black" stroke-width="2" class="strokePoint"></path>
+</g>
+</svg>

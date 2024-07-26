@@ -1,0 +1,100 @@
+:root{	
+	--primary:     #0f6bff;     /* 액션, 정보상태, 긍정적 */
+	--secondary:   #31415f;     /* 부정적 액션,  */
+	--success:     #00c394;     /* 성공, 긍정적 */
+	--info:        #00a3ff;     /* 정보, 긍정적 */
+	--warning:     #ffa800;     /* 경고, 작은오류, 부정적 */
+	--danger:      #e30029;     /* 파괴적, 심각한오류, 부정적 */
+	--special:     #6223fd;     /* 특별한,  */
+	--gray:        #898989;     /* 배경, 라인 */
+	--dark:        #333333;     /* 배경, 라인 */
+	--disabled:    #d3d3d3;     /* 꺼짐, 부정적 */		
+
+	--white:       #ffffff;
+	--gray-10:     #e5e5e5;
+	--gray-20:     #cccccc;
+	--gray-30:     #b2b2b2;
+	--gray-40:     #999999;
+	--gray-50:     #7f7f7f;
+	--gray-60:     #666666;
+	--gray-70:     #4c4c4c;
+	--gray-80:     #333333;
+	--gray-90:     #191919;
+	--black:       #000000;
+
+	--primary20:   #C7D9F7;
+	--primary40:   #99BEF9;
+	--primary60:   #6BA2FB;
+	--primary80:   #3D87FD;
+	--primary90:   #0A4BB3;
+	--primary100:  #073580;
+
+	--secondary20: #7685A1;
+	--secondary40: #67758F;
+	--secondary60: #51607D;
+	--secondary80: #415170;
+
+	--success20:   #B8E9DD;
+	--success40:   #7BDCC5;
+	--success60:   #3DCFAC;
+	--success80:   #009C76;
+
+	--info20:      #B8E1F8;
+	--info40:      #7BCCFA;
+	--info60:      #3DB8FD;
+	--info80:      #0082CC;
+	
+	--warning20:   #F8E2B8;  
+	--warning40:   #FACF7B;  
+	--warning60:   #FDBB3D;  
+	--warning80:   #FF8A00;  
+
+	--danger20:    #F1B8C2;
+	--danger40:    #EC7B8F;
+	--danger60:    #E83D5C;
+	--danger80:    #B60021;
+
+	--special20:   #D0C1F7; 
+	--special40:   #AB8CF9; 
+	--special60:   #8758FB; 
+	--special80:   #4E1CCA; 
+
+	/* font */
+  --font-body: "Nanum Gothic", sans-serif;
+  --font-tit: "Noto Sans", sans-serif;
+  --font-hero: "Poppins", sans-serif;
+	--font-nomal:400;
+	--font-bold:500;
+	--font-color:#111;
+	
+	/* content width */
+	--con-width:1400px;	
+
+	/* Break Point */
+	--xsBp: 576px;
+	--smBp: 768px;
+	--mdBp: 1024px;
+	--lgBp: 1290px;
+	--xlBp: 1440px;	
+}
+
+$color-primary:   #0f6bff;     /* 액션, 정보상태, 긍정적 */
+$color-secondary: #31415f;     /* 부정적 액션,  */
+$color-success:   #00c394;     /* 성공, 긍정적 */
+$color-info:      #00a3ff;     /* 정보, 긍정적 */
+$color-warning:   #ffa800;     /* 경고, 작은오류, 부정적 */
+$color-danger:    #e30029;     /* 파괴적, 심각한오류, 부정적 */
+$color-specail:   #6223fd;     /* 특별한,  */
+$color-gray:      #898989;     /* 배경, 라인 */
+$color-dark:      #333333;     /* 배경, 라인 */
+$color-disabled:  #d3d3d3;     /* 꺼짐, 부정적 */	
+
+$color-white:     #ffffff;
+$color-black:     #000;
+
+$font-body: "Nanum Gothic", sans-serif;
+$font-tit: "Noto Sans", sans-serif;
+$font-hero: "Poppins", sans-serif;
+$font-nomal:400;
+$font-bold:600;
+$font-color:#111;

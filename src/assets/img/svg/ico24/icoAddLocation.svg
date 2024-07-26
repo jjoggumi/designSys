@@ -1,0 +1,6 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g class="icoAddLocation">
+<path d="M12 3C15.6788 3 19 5.80289 19 10.2C19 11.5904 18.4391 13.2081 17.1712 15.0774C16.0121 16.7861 14.2973 18.6526 12 20.6765C9.70272 18.6526 7.98787 16.7861 6.82882 15.0774C5.56087 13.2081 5 11.5904 5 10.2C5 5.80289 8.32118 3 12 3Z" stroke="black" stroke-width="2" class="strokeBasic"></path>
+<path d="M9 10H15M12 7V13" stroke="black" stroke-width="2" stroke-linecap="round" class="strokePoint"></path>
+</g>
+</svg>
