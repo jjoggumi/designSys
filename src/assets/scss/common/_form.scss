@@ -1,0 +1,118 @@
+
+/* form */
+label {
+  margin-bottom: 0;
+  vertical-align: middle;
+}
+
+input[type=text], input[type=password], input[type=search], input[type=number], select {
+  font-family: var(--font-body);
+  height: 3.6rem;
+  padding: .4rem;
+  font-size: 1.5rem;
+  border: 1px solid #ddd;
+  vertical-align: middle;
+  border-radius: 0.3rem;
+  vertical-align: middle;
+}
+
+textarea {
+  font-family: var(--font-body);
+  padding: .4rem;
+  font-size: 1.5rem;
+  border: 1px solid #ddd;
+  vertical-align: middle;
+}
+
+textarea:disabled, textarea[readonly], input:disabled, input[readonly], select:disabled, select[readonly] {
+  background-color: #f5f5f5;
+  opacity: 1;
+  color: #999;
+}
+
+.inputGroup {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  width: 100%;
+}
+
+.inputGroup > .inputForm {
+  position: relative;
+  flex: 1 1 auto;
+  width: 1%;
+  margin-bottom: 0;
+  margin-left: -1px;
+}
+
+.inputGroup > .inputPrepend {
+  margin-right: -1px;
+}
+
+.inputGroup > .inputApppend {
+  margin-left: -1px;
+}
+
+.inputGroup > .inputPrepend > .btn,
+.inputGroup > .inputPrepend > .inputTxt,
+.inputGroup > .inputprepend > .inputForm,
+.inputGroup > .inputApppend:not(:last-child) > .btn,
+.inputGroup > .inputApppend:not(:last-child) > .inputTxt,
+.inputGroup > .inputApppend:not(:last-child) > .inputForm,
+.inputGroup > .inputApppend:last-child > .btn:not(:last-child),
+.inputGroup > .inputApppend:last-child > .inputForm:not(:last-child),
+.inputGroup > .inputApppend:last-child > .inputText:not(:last-child) {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.inputGroup > .inputApppend > .btn,
+.inputGroup > .inputApppend > .inputTxt,
+.inputGroup > .inputApppend > .inputForm,
+.inputGroup > .inputPrepend:not(:first-child) > .btn,
+.inputGroup > .inputPrepend:not(:first-child) > .inputTxt,
+.inputGroup > .inputPrepend:not(:first-child) > .inputForm,
+.inputGroup > .inputPrepend:first-child > .btn:not(:first-child),
+.inputGroup > .inputPrepend:first-child > .inputForm:not(:first-child),
+.inputGroup > .inputPrepend:first-child > .inputTxt:not(:first-child) {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  height: 100%;
+}
+
+.inputGroup > .inputForm:not(:first-child) {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.inputGroup > .inputForm:not(:last-child) {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.inputGroup .inputTxt {
+  height: 3.6rem;
+  padding: .4rem .8rem;
+  font-size: 1.5rem;
+  border: 1px solid #ddd;
+  background: #f5f5f5;
+  display: block;
+  border-radius: .25rem;
+}
+
+.formGroup {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.formGroup > * {
+  margin: .4rem;
+}
+
+input[class*=datepicker] {
+  background: url(/images/svg/icoCalendar.svg) no-repeat;
+  background-position: calc(100% - .8rem) 50%;
+  padding-right: 3.2rem;
+}

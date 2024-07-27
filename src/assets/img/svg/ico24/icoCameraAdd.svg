@@ -1,0 +1,6 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g class="icoCameraAdd">
+<path d="M4 13V20C4 20.5523 4.44772 21 5 21H21C21.5523 21 22 20.5523 22 20V8C22 7.44772 21.5523 7 21 7H17.5L15.5 5H10.5" stroke="black" stroke-width="2" stroke-linecap="round" class="strokeBasic"></path>
+<path d="M2 7H5M5 7H8M5 7V4M5 7V10M13 10C10.792 10 9 11.792 9 14C9 16.208 10.792 18 13 18C15.208 18 17 16.208 17 14C17 11.792 15.208 10 13 10Z" stroke="black" stroke-width="2" stroke-linecap="round" class="strokePoint"></path>
+</g>
+</svg>

@@ -1,0 +1,188 @@
+/* table */
+table {
+  width: 100%; border-top: 1px solid #252525; border-bottom: 1px solid #b5b5b5; color: #212529; border-collapse: collapse; border-spacing: 0; 
+  
+	caption { position: absolute; top: -10000px; left: -10000px; height: 1px; width: 1px; text-align: left; overflow: hidden; }
+	
+	> :not(caption) > * > * {
+	    padding: 1.2rem;border-bottom: 1px solid #dee2e6; vertical-align: middle; font-size: 1.5rem;
+	}	
+	
+	th {
+	  text-align: inherit;
+	}
+	
+	
+	> thead > tr > th {
+		text-align: center; border-bottom: 1px solid #bbb;
+	}
+	
+	> tbody + tbody {
+	  border-top: 2px solid #bbb;
+	}
+	
+	> tbody > tr:last-child > * {
+	  border-bottom: 0;
+	}
+	  
+	&.tb-lg > :not(caption) > * > * {
+	  padding: 2rem;
+	  font-size: 1.6rem;
+	}
+	
+	&.tb-sm > :not(caption) > * > * {
+	  padding: .8rem;
+	  font-size: 1.4rem;
+	}
+	
+	&.tb-xs > :not(caption) > * > * {
+	  padding: .4rem;
+	  font-size: 1.3rem;
+	}
+	
+	/* Table Style */		
+	&.type1 {
+		position: relative;
+		border-right: 1px solid #bbb;	
+		border-top:0;
+		
+		&::before {
+		    content: ''; display: block; height: 1px; background: #000; position: absolute; top: 0; left: 0; right: 0;
+		}
+		
+		> :not(caption) > * > * {
+		  border-left: 1px solid #eaeaec;
+		  &:first-child{border-left: 1px solid #bbb;}
+		}
+		
+		
+	}
+	
+	&.type2 {
+		position: relative;
+		border-right: 1px solid #eaeaec;
+		border-top:0;
+		
+		&::before {
+		    content: ''; display: block; height: 1px; background: #000; position: absolute; top: 0; left: 0; right: 0;
+		}
+		
+		> :not(caption) > * > * {
+		  border-left: 1px solid #eaeaec;
+		  border-bottom: 1px solid #eaeaec;
+		}
+		
+		> :not(caption) > * > th {
+		  background: #f7f7f9;
+		}
+	}
+	
+	&.type3 {
+		border-right: 1px solid #ddd;
+		border-top: 1px solid #ddd;
+		border-bottom: 1px solid #ddd;
+		
+		> :not(caption) > * > * {
+		border-left: 1px solid #ddd;
+		border-bottom: 1px solid #ddd;
+		}
+		
+		> :not(caption) > * > th {
+		  background: #f9f9f9;
+		}
+	}
+	
+	&.type4 {
+		border-top: 0;
+		border-bottom: 1px solid #dee2e6;
+	  
+		> thead > tr > th { background: #f9f9f9; border: 0; }
+		> thead > tr {border: 1px solid #ddd;}
+		
+		> tbody > tr:last-child > * {
+			border-bottom: 1px solid #dee2e6;
+		}	
+	}		
+}
+
+.tbWrap {
+	overflow: auto;
+	margin-bottom: 2rem;
+}
+
+.tbHead {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: .8rem;
+  
+	p {
+	  margin: 0;
+	}
+}
+ 
+
+.tbSearch {
+	display: flex;
+	
+	> * {
+		margin: 0 .4rem;
+	}
+}
+
+/* 이전글 다음글 */
+.viewNav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 2rem;
+	margin: -2rem;
+  
+	a {
+	  width: 50%;
+	  height: 7rem;
+	}
+	
+	a + a {
+	  border-left: 1px solid #ddd;
+	}
+	
+	.next {
+	  display: flex;
+	  flex-flow: row-reverse;
+	  align-items: center;
+	  color: #333;
+	}
+	
+	.prv {
+	  display: flex;
+	  align-items: center;
+	  color: #333;
+	}
+	
+	span {
+	  display: inline-block;
+	  vertical-align: middle;
+	}
+	
+	.tit {
+	  font-weight: var(--font-bold);
+	  width: 10rem;
+	  text-align: center;
+	}
+	
+	.next::before,
+	.prv::before {
+	  content: "";
+	  display: block;
+	  width: .8rem;
+	  height: .8rem;
+	  border-top: 1px solid #333;
+	  border-left: 1px solid #333;
+	  transform: rotate(135deg);
+	}
+	
+	.prv::before {
+	  transform: rotate(-45deg);
+	}
+}

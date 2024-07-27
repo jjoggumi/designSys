@@ -1,0 +1,128 @@
+/* tab */
+.tab {
+	display: -ms-flexbox;
+	display: flex;
+  
+	> button {
+		width:100%;
+		margin: 0 .4rem;
+		padding: 1.6rem 2.4rem;
+		border: 1px solid #ddd;
+		background-color: #FFF;
+		color: #999;
+		cursor: pointer;
+		transition: .3s;
+		
+		&:hover {
+		  background-color: #f5f5f5;
+		}
+		
+		&:first-child {
+		  margin-left: 0;
+		}
+		
+		&.active {
+		  font-weight: $font-bold;
+		  border: 1px solid var(--primary);
+		  margin-bottom: -1px;
+		  background: #fff;
+		  color: #111;
+		}
+	}
+	
+	&.tab-md button {
+	  padding: .8rem 1.6rem; font-size:1.5rem;
+	}
+	
+	&.tab-sm button {
+	  padding: .4rem .8rem; font-size:1.4rem;
+	}
+	
+	&.tab-inline > button {
+	  min-width: auto;
+	}
+	
+	&.tab-flex {
+	  flex-wrap: nowrap;
+
+		> button {
+		  width: 100%;
+		}
+	}	
+	
+	&.type1 {
+	  border-bottom: 1px solid var(--primary);
+	  
+		> button {
+		  cursor: pointer;
+		  border-bottom: 0px;
+		  margin-left: 0;
+		  margin-right: 0;
+		}
+		
+		> button + button {
+		  margin-left: -1px;
+		}
+		
+		> button.active {
+		  z-index: 1;
+		  border-bottom: 0;
+		}
+	}
+	
+	&.type2 button {
+		margin: 0px;
+	  
+		 + button {
+		  margin-left: -1px;
+		}
+		
+		&:first-child {
+		  border-radius: .4rem 0 0 .4rem;
+		}
+		
+		&:last-child {
+		  border-radius: 0 .4rem .4rem 0;
+		}
+		
+		&.active {
+		  z-index: 1;
+		  color: #fff;
+		  background: #147ADA;
+		  border: 1px solid #147ADA;
+		}
+		
+		&.active:hover {
+		  background: #0b5ed7;
+		  border: 1px solid #0b5ed7;
+		}
+	}
+	
+	&.type3 {
+		border-bottom: 1px solid #ddd;
+		button {
+			border:0;border-bottom:3px solid transparent;
+			
+			&.active{
+				border-bottom:3px solid var(--primary);
+			}
+			&:hover:not(.active){
+				border-bottom:3px solid #eee;background:#fff;
+			}
+		}
+	
+	}
+	
+	@media (min-width: 768px){
+		> button {
+			-ms-flex-wrap: wrap;
+			flex-wrap: wrap;
+			width:auto;
+		}	
+	}
+}
+
+.tabcontent {
+  display: none;
+  padding: 2rem 0;
+}

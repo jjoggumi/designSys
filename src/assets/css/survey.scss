@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+@import "variable.scss";
+@import "mixin.scss";
+@import "common.scss";
+@import "survey-common.scss"; /* 설문 만들기, 응답 레이아웃 및 survey-create__box  */
+@import "survey-fcfs.scss"; /* 방과후 신청 & 학부모 상담 화면 */
+@import "survey-complete.scss"; /* 완료 화면 */
+@import "survey-stats.scss"; /* 통계 화면 */
+@import "survey-preview.scss"; /* APP 화면 미리보기 */

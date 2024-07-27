@@ -1,0 +1,7 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g class="icoLockClose">
+<path d="M7 6C7 6.55228 7.44772 7 8 7C8.55228 7 9 6.55228 9 6H7ZM15 7V9H17V7H15ZM11 4H12V2H11V4ZM17 7C17 4.23858 14.7614 2 12 2V4C13.6569 4 15 5.34315 15 7H17ZM9 6C9 4.89543 9.89543 4 11 4V2C8.79086 2 7 3.79086 7 6H9Z" fill="black" class="strockPoint"></path>
+<path d="M5 20V10C5 9.44772 5.44772 9 6 9H18C18.5523 9 19 9.44772 19 10V20C19 20.5523 18.5523 21 18 21H6C5.44772 21 5 20.5523 5 20Z" stroke="black" stroke-width="2" class="strokeBasic"></path>
+<circle cx="12" cy="15" r="1" stroke="black" stroke-width="2" class="strokePoint"></circle>
+</g>
+</svg>

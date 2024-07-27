@@ -1,0 +1,325 @@
+@charset "UTF-8";
+
+.personnel-pdf-container {
+}
+.personnel-pdf-container .record-recording__content__inwon {
+
+}
+.personnel-pdf-container .record-recording__content__inwon .top {
+  width: 100%;
+  height: auto;
+  min-height: 91px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: start;
+}
+.personnel-pdf-container .record-recording__content__inwon .top .check {
+  margin-right: 16px;
+  position: relative;
+}
+.personnel-pdf-container .record-recording__content__inwon .top .check em {
+  display: none;
+  position: absolute;
+  top: calc(100% + 5px);
+  left: 50%;
+  transform: translateX(-50%);
+  width: auto;
+  height: auto;
+  border-radius: 4px;
+  padding: 10px 12px;
+  background: #222222;
+  font-size: 12px;
+  font-weight: 500;
+  color: #fff;
+  white-space: nowrap;
+}
+.personnel-pdf-container .record-recording__content__inwon .top .check:hover em {
+  display: block;
+}
+.personnel-pdf-container .record-recording__content__inwon .top .check input[type=checkbox] + label::before {
+  content: "";
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  background: url(../img/icon/icon_unckecked_38.png) 0/48px no-repeat;
+  vertical-align: middle;
+}
+.personnel-pdf-container .record-recording__content__inwon .top .check input[type=checkbox]:hover + label::before {
+  background: url(../img/icon/icon_check_hover_38.png) 0/48px no-repeat;
+}
+.personnel-pdf-container .record-recording__content__inwon .top .check input[type=checkbox]:checked + label::before {
+  background: url(../img/icon/icon_checked_38.png) 0/48px no-repeat;
+}
+.personnel-pdf-container .record-recording__content__inwon .top .content {
+  width: 100%;
+}
+.personnel-pdf-container .record-recording__content__inwon .top .content .title {
+  margin-bottom: 4px;
+  height: auto;
+  min-height: 33px;
+}
+.personnel-pdf-container .record-recording__content__inwon .top .content .title h2 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #000;
+  line-height: 33px;
+}
+.personnel-pdf-container .record-recording__content__inwon .top .content .etc {
+  height: 24px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.personnel-pdf-container .record-recording__content__inwon .top .content .etc span {
+  font-size: 14px;
+  font-weight: 400;
+  color: #9E9E9E;
+  margin-left: 4px;
+  cursor: pointer;
+}
+.personnel-pdf-container .record-recording__content__inwon .list-wrap {
+  width: 100%;
+  height: auto;
+}
+.personnel-pdf-container .record-recording__content__inwon .list-wrap .list {
+  width: 100%;
+  height: auto;
+}
+.personnel-pdf-container .record-recording__content__inwon .list-wrap .list table {
+  width: 100%;
+  /* border: 1px solid #E0E0E0; */
+  border-collapse: separate;
+  border-spacing: unset;
+}
+.personnel-pdf-container .record-recording__content__inwon .list-wrap .list table tr th,
+.personnel-pdf-container .record-recording__content__inwon .list-wrap .list table tr td {
+  /* border: 1px solid #E0E0E0; */
+  font-size: 14px;
+  font-weight: 500;
+}
+.personnel-pdf-container .record-recording__content__inwon .list-wrap .list table tr th {
+  height: 62px;
+  background: #F5F6F7;
+  color: #222;
+  position: sticky;
+  z-index: 1;
+  top: 0;
+  border-left: 1px solid #E0E0E0;
+  border-top: 1px solid #E0E0E0;
+  border-bottom: 1px solid #E0E0E0;
+  border-width: 1px 1px 1px 1px;
+}
+.personnel-pdf-container .record-recording__content__inwon .list-wrap .list table tr td {
+  border-left: 1px solid #E0E0E0;
+  border-bottom: 1px solid #E0E0E0;
+}
+.personnel-pdf-container .record-recording__content__inwon .list-wrap .list table tr th:first-child,
+.personnel-pdf-container .record-recording__content__inwon .list-wrap .list table tr td:first-child {
+  border-left: 1px solid #E0E0E0;
+}
+.personnel-pdf-container .record-recording__content__inwon .list-wrap .list table tr th:last-child,
+.personnel-pdf-container .record-recording__content__inwon .list-wrap .list table tr td:last-child {
+  border-right: 1px solid #E0E0E0;
+}
+.personnel-pdf-container .record-recording__content__inwon .list-wrap .list table tr td:first-child {
+  font-weight: 400;
+}
+.personnel-pdf-container .record-recording__content__inwon .list-wrap .list table tr td {
+  height: 50px;
+  text-align: center;
+  vertical-align: middle;
+  color: #000;
+}
+.personnel-pdf-container .record-recording__content__inwon .list-wrap .list table tr th p.check-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.personnel-pdf-container .record-recording__content__inwon .list-wrap .list table tr th p.check-list span {
+  display: inline-block;
+  margin-top: 6px;
+  height: auto;
+  min-height: 28px;
+  width: 100%;
+  overflow: hidden;
+  word-break: break-all;
+  line-height: 14px;
+}
+.personnel-pdf-container .record-recording__content__inwon .list-wrap .list table tr th p.memo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.personnel-pdf-container .record-recording__content__inwon .list-wrap .list table tr th p.memo i {
+  margin-left: 4px;
+}
+.personnel-pdf-container .record-recording__content__inwon .list-wrap .list table tr td p.name {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  word-break: break-all;
+  line-height: 21px;
+  padding: 0 9px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #000;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.personnel-pdf-container .record-recording__content__inwon .list-wrap .list table tr td p.name span.n-txt {
+  width: 100%;
+  overflow: hidden;
+  display: inline-block;
+  word-break: break-all;
+  line-height: 21px;
+  height: auto;
+  max-height: 46px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.personnel-pdf-container .record-recording__content__inwon .list-wrap .list table tr td p.name span.delete {
+  width: 38px;
+  height: 28px;
+  border-radius: 21px;
+  box-shadow: 0px 4px 12px 0px #0000001F;
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  transform: translateY(-50%);
+  z-index: 1;
+  background: #fff;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+.personnel-pdf-container .record-recording__content__inwon .list-wrap .list table tr td p.check-list {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.personnel-pdf-container .record-recording__content__inwon .list-wrap .list table tr td p.check-list i {
+  display: none;
+}
+.personnel-pdf-container .record-recording__content__inwon .list-wrap .list table tr td p.check-list.checked i {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+}
+.personnel-pdf-container .record-recording__content__inwon .list-wrap .list table tr td p.check-list.check-a.checked i {
+  background: url("../img/icon/icon_inwon_checked_a.svg");
+}
+.personnel-pdf-container .record-recording__content__inwon .list-wrap .list table tr td p.check-list.check-b.checked i {
+  background: url("../img/icon/icon_inwon_checked_b.svg");
+}
+.personnel-pdf-container .record-recording__content__inwon .list-wrap .list table tr td p.check-list.check-c.checked i {
+  background: url("../img/icon/icon_inwon_checked_c.svg");
+}
+.personnel-pdf-container .record-recording__content__inwon .list-wrap .list table tr td p.check-list.check-d.checked i {
+  background: url("../img/icon/icon_inwon_checked_d.svg");
+}
+.personnel-pdf-container .record-recording__content__inwon .list-wrap .list table tr td p.check-list.check-e.checked i {
+  background: url("../img/icon/icon_inwon_checked_e.svg");
+}
+.personnel-pdf-container .record-recording__content__inwon .list-wrap .list table tr td p.check-list.check-point.checked i {
+  background: url("../img/icon/icon_inwon_checked_orange.svg");
+}
+/* .personnel-pdf-container .record-recording__content__inwon .list-wrap .list table tr td p.check-list i {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  background: url("../img/icon/icon_inwon_checkbold_28.svg");
+} */
+/* .personnel-pdf-container .record-recording__content__inwon .list-wrap .list table tr td p.check-list:hover i,
+.personnel-pdf-container .record-recording__content__inwon .list-wrap .list table tr td p.check-list.checked i {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  background: url("../img/icon/icon_inwon_checkbold_on_28.svg");
+} */
+.personnel-pdf-container .record-recording__content__inwon .list-wrap .list table tr td p.check-list-text {
+  font-family: "NanumSquareRound";
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  word-break: break-all;
+  line-height: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  padding: 0 10px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #E0E0E0;
+}
+.personnel-pdf-container .record-recording__content__inwon .list-wrap .list table tr td div.input-text {
+  width: 100%;
+  height: 100%;
+  padding: 4px 10px;
+  display: flex;
+  align-items: center;
+}
+.personnel-pdf-container .record-recording__content__inwon .list-wrap .list table tr td div.input-text div.text {
+  width: 100%;
+  height: auto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #222;
+  word-break: break-all;
+  outline: none;
+  transform: none;
+  cursor: text;
+  text-align: left;
+}
+.personnel-pdf-container .record-recording__content__inwon .list-wrap .list table tr td div.input-text textarea {
+  width: 100%;
+  height: auto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  border: none;
+  resize: none;
+  overflow: hidden;
+  word-break: break-all;
+}
+/* .personnel-pdf-container .record-recording__content__inwon .list-wrap .list table tr td div.check-list-text div.text {
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 22px;
+  color: #fff;
+  text-align: center;
+} */
+.personnel-pdf-container .record-recording__content__inwon .list-wrap .list table tr td div.input-text div.text:empty:before {
+  content: attr(placeholder);
+  display: block;
+  color: #BDBDBD;
+}
+.personnel-pdf-container .record-recording__content__inwon .list-wrap .list table tr td.align-l {
+  text-align: left;
+}
+.personnel-pdf-container .record-recording__content__inwon .list-wrap .list .nodata {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.personnel-pdf-container .record-recording__content__inwon .list-wrap .list .nodata span {
+  font-size: 16px;
+  font-weight: 400;
+  color: #9E9E9E;
+  margin-top: 12px;
+  text-align: center;
+  line-height: 21px;
+}

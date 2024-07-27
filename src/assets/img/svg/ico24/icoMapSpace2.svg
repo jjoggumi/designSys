@@ -1,0 +1,9 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g class="icoMapSpace2">
+<path d="M6 8V16M16 6L8 6M18 8V16M16 18H8" stroke="black" stroke-width="2" class="strokeBasic"></path>
+<path d="M4 4H8V8H4V4Z" stroke="black" stroke-width="2" class="strokePoint"></path>
+<path d="M4 16H8V20H4V16Z" stroke="black" stroke-width="2" class="strokePoint"></path>
+<path d="M16 4H20V8H16V4Z" stroke="black" stroke-width="2" class="strokePoint"></path>
+<path d="M16 16H20V20H16V16Z" stroke="black" stroke-width="2" class="strokePoint"></path>
+</g>
+</svg>

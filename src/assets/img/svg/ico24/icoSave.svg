@@ -1,0 +1,7 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g class="icoSave">
+<circle cx="12" cy="14" r="1.5" stroke="black" stroke-width="3" class="fillPoint"></circle>
+<path d="M8 6H13V7H8L8 6Z" stroke="black" stroke-width="2" class="fillPoint"></path>
+<path d="M5 4H16L20 8V19C20 19.5523 19.5523 20 19 20H5C4.44772 20 4 19.5523 4 19V5C4 4.44772 4.44772 4 5 4Z" stroke="black" stroke-width="2" class="strokePoint"></path>
+</g>
+</svg>
